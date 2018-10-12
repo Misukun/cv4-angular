@@ -1,0 +1,190 @@
+.section{
+    padding: 70px 0;
+    position: relative;
+    background-color: #FFFFFF;
+    p {
+        text-align: justify;
+    }
+}
+.section-with-space{
+    padding: 60px 0;
+}
+.section-gray{
+    background-color: #EEEEEE;
+}
+.section-nude{
+    background-color: $bg-nude;
+}
+.section-gold{
+    background-color: #caac90;
+    color: $white-color;
+}
+.section-brown{
+    background-color: #A59E94;
+    color: $white-color;
+}
+.section-light-blue{
+    background-color: $primary-color;
+    color: $white-color;
+}
+.section-dark-blue{
+    background-color: #506367;
+    color: $white-color;
+}
+.section-dark{
+    background-color: #0b1011;
+}
+.section-image,
+.section-gold,
+.section-dark{
+    position: relative;
+
+    .title,
+    .info-title,
+    .card-plain .card-title{
+        color: $white-color !important;
+    }
+    .category,
+    .description,
+    .card-plain .card-description,
+    .card-plain .card-category{
+        color: rgba($white-color, .7);
+    }
+    hr{
+        border-color: rgba(255, 255, 255, 0.19);
+    }
+}
+.page-header,
+.carousel-caption{
+    .title,
+    .info-title{
+        color: $white-color;
+    }
+}
+[class*="features-"],
+[class*="team-"],
+[class*="projects-"],
+[class*="pricing-"],
+[class*="testimonials-"],
+[class*="contactus-"]{
+    padding: 80px 0;
+}
+.section-image{
+    background-position: center center;
+    background-size: cover;
+
+    &:before{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    & .container{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.section-login{
+    min-height: 700px;
+}
+
+// About
+.section-about {
+    p {
+        margin-bottom: 15px;
+        // text-align: justify;
+    }
+    .download {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+// Education 
+.section-education {
+    .title {
+        text-decoration: underline;
+    }
+}
+
+// Experience
+.section-experience {
+    .title {
+        text-decoration: underline;
+        color: #FFFFFF;
+    }
+    .item-experience {
+        text-align: center;
+        img {
+            margin-top: 30px;
+        }
+        
+        a {
+            color: #FFFFFF;
+            font-weight: 700;
+            &:hover,
+            &:visited,
+            &:focus {
+                color: #FFFFFF;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Trabajos
+.section-portfolio {
+    .title {
+        text-decoration: underline;
+        color: #FFFFFF;
+    }
+}
+
+// Comentarios
+.section-coments {
+    background-image: url('../img/login-image.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    .title {
+        text-decoration: underline;
+        color: #FFFFFF;
+    }
+
+    .page-carousel {
+        background: transparent;
+        box-shadow: none;
+        &:hover {
+            box-shadow: none !important;
+        }
+        .carousel {
+            background: transparent;
+            .carousel-inner {
+                background: transparent;
+                .carousel-item {
+                    background: transparent;
+                    img {
+                        background: transparent;
+                        box-shadow: none;
+                    }
+                    .carousel-caption {
+                        top: 0;
+                        background: rgba(0,0,0,0.6);
+                        padding: 20px;
+                        margin-bottom: -20px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -53,7 +53,7 @@ export class NavbarComponent implements OnInit {
         }
     };
     isHome() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
 
         if( titlee === '/home' ) {
             return true;
@@ -63,12 +63,26 @@ export class NavbarComponent implements OnInit {
         }
     }
     isDocumentation() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
         if( titlee === '/documentation' ) {
             return true;
         }
         else {
             return false;
         }
+    }
+    isErrorPage() {
+        let titlee = this.location.prepareExternalUrl(this.location.path());
+        if( titlee === '/not-found' ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    preventClick(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.sidebarClose();
     }
 }

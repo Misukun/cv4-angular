@@ -1,14 +1,14 @@
-<footer class="footer">
+<footer class="footer" *ngIf="!isErrorPage()">
     <div class="container">
         <div class="row">
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#about">Sobre mi</a></li>
-                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
-                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
-                    <li><a href="https://www.creative-tim.com">Creative Tim</a></li>
-                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
-                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+                    <li><button class="btn btn-link btn-default" [scrollTo]="'#about'" [scrollDuration]="800" [scrollOffset]="-71">Sobre mi</button></li>
+                    <li><button class="btn btn-link btn-default" [scrollTo]="'#education'" [scrollDuration]="800" [scrollOffset]="-71">Educación</button></li>
+                    <li><button class="btn btn-link btn-default" [scrollTo]="'#experience'" [scrollDuration]="800" [scrollOffset]="-71">Experiencia</button></li>
+                    <li><button class="btn btn-link btn-default" [scrollTo]="'#skills'" [scrollDuration]="800" [scrollOffset]="-71">Habilidades</button></li>
+                    <li><button class="btn btn-link btn-default" [scrollTo]="'#portfolio'" [scrollDuration]="800" [scrollOffset]="-71">Trabajos</button></li>
+                    <li><button class="btn btn-link btn-default" [scrollTo]="'#coments'" [scrollDuration]="800" [scrollOffset]="-71">Comentarios</button></li>
                 </ul>
             </nav>
             <div class="credits ml-auto">

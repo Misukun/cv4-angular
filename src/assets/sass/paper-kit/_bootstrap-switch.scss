@@ -252,3 +252,9 @@
 .bootstrap-switch.bootstrap-switch-off .bootstrap-switch-success {
   background-color: #cfcfca;
 }
+
+.row {
+  &.special-row {
+      flex: 100%;
+  }
+}

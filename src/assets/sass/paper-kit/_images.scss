@@ -22,6 +22,9 @@
     padding: 4px;
     border-radius: 50% !important;
     max-width: 100%;
+    &.border-strong {
+        border: 2px solid #DDDDDD;
+    }
 }
 .img-thumbnail{
     border: 0 none;
@@ -33,8 +36,9 @@
     padding: 0px;
 }
 .img-responsive {
-    max-width: 80px;
+    max-width: 50px;
     margin: 5px 15px;
+    cursor: pointer;
 }
 .portfolio-row .img-rounded{
     margin: 50px 0 20px;

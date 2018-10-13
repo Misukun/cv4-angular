@@ -1,5 +1,5 @@
 .section{
-    padding: 70px 0;
+    padding: 20px 0;
     position: relative;
     background-color: #FFFFFF;
     p {
@@ -100,6 +100,9 @@
         margin-bottom: 15px;
         // text-align: justify;
     }
+    .img-container {
+        text-align: center;
+    }
     .download {
         p {
             text-align: center;
@@ -121,7 +124,7 @@
         color: #FFFFFF;
     }
     .item-experience {
-        text-align: center;
+        // text-align: center;
         img {
             margin-top: 30px;
         }
@@ -174,6 +177,7 @@
                     img {
                         background: transparent;
                         box-shadow: none;
+                        height: 430px;
                     }
                     .carousel-caption {
                         top: 0;
@@ -181,6 +185,9 @@
                         padding: 20px;
                         margin-bottom: -20px;
                         border-radius: 8px;
+                        width: 100%;
+                        left: 0;
+                        right: 0;
                     }
                 }
             }

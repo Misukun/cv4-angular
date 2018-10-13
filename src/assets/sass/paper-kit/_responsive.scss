@@ -380,7 +380,7 @@
         border-top: none;
         text-align: left;
         border-left: 1px solid #CCC5B9;
-        padding-right: 0px;
+        padding-right: 40px;
         padding-left: 40px;
         padding-top: 15px;
 
@@ -390,7 +390,10 @@
             position: relative;
             z-index: 3;
             // overflow-y:scroll;
-            height: 95%;
+            // height: 95%;
+            &.scrollers {
+                border-bottom: 1px solid $dark-gray;
+            }
         }
         .navbar-nav > .nav-item{
             // border-bottom: 1px solid;
@@ -430,6 +433,7 @@
     .nav-open{
         & .navbar-collapse{
             @include transform-translate-x(0px);
+            display: block;
         }
         & .wrapper{
             left: 0;

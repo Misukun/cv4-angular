@@ -1,9 +1,9 @@
 <div id="coments" class="section section-dark section-coments">
   <div class="container">
-    <!-- <div class="tim-title">
-      <h2 class="title">Comentarios LinkedIn</h2>
-    </div> -->
-    <div class="row">
+    <div class="tim-title">
+      <h2 class="title">Comentarios</h2>
+    </div>
+    <!-- <div class="row">
       <div class="col-lg-8 col-md-12">
         <div class="card page-carousel">
           <ngb-carousel>
@@ -59,6 +59,52 @@
               <i class="nc-icon nc-zoom-split"></i>
               <i class="nc-icon nc-cloud-download-93"></i>
           </div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div *ngFor="let item of data; even as isEven; odd as isOdd">
+          <div class="card" *ngIf="isEven">
+            <div class="card-body">
+              <div class="author">
+                <a href="{{item.url}}">
+                  <img src="{{item.img}}" alt="..." class="avatar img-raised">
+                  <span>{{item.name}}</span><br>
+                </a>
+                <span class="position">{{item.position}}</span>
+                <br>
+                <br>
+              </div>
+              <span class="category-social pull-right">
+                <i class="fa fa-quote-right"></i>
+              </span>
+              <div class="clearfix"></div>
+              <p class="card-description">{{item.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div *ngFor="let item of data; even as isEven; odd as isOdd">
+          <div class="card" *ngIf="isOdd">
+            <div class="card-body">
+              <div class="author">
+                <a href="{{item.url}}">
+                  <img src="{{item.img}}" alt="..." class="avatar img-raised">
+                  <span>{{item.name}}</span><br>
+                </a>
+                <span class="position">{{item.position}}</span>
+                <br>
+                <br>
+              </div>
+              <span class="category-social pull-right">
+                <i class="fa fa-quote-right"></i>
+              </span>
+              <div class="clearfix"></div>
+              <p class="card-description">{{item.text}}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -61,6 +61,23 @@
         -ms-transform: none;
         -moz-transform: none;
     }
+    .author {
+        display: inline-block;
+        .avatar {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+    .category-social {
+        font-size: 24px;
+        position: relative;
+        margin-top: -4px;
+        top: 2px;
+        margin-right: 5px;
+    }
 }
 .section-dark{
     .card-profile.card-plain{

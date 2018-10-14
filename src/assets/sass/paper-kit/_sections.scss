@@ -145,7 +145,6 @@
 // Trabajos
 .section-portfolio {
     .title {
-        text-decoration: underline;
         color: #FFFFFF;
     }
 }
@@ -158,7 +157,6 @@
     background-attachment: fixed;
     margin-top: 0;
     .title {
-        text-decoration: underline;
         color: #FFFFFF;
     }
 
@@ -191,6 +189,21 @@
                     }
                 }
             }
+        }
+    }
+
+    .card {
+        background-color: rgba(0,0,0,0.6);
+        color: #DDDDDD;
+        a {
+            font-size: 2em;
+            color: #DDDDDD;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .position {
+            font-size: 1.5em;
         }
     }
 

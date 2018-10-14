@@ -1,4 +1,5 @@
-Header set Access-Control-Allow-Origin "*"
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-</IfModule>
+# ErrorDocument 404 http://www.eloyariascurriculum.com/not-found
+# Header set Access-Control-Allow-Origin "*"
+# <IfModule mod_headers.c>
+#     Header set Access-Control-Allow-Origin "*"
+# </IfModule>

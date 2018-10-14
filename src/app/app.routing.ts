@@ -15,9 +15,9 @@ const routes: Routes =[
     // { path: 'signup',           component: SignupComponent },
     // { path: 'landing',          component: LandingComponent },
     // { path: 'nucleoicons',      component: NucleoiconsComponent },
-    { path: '',                 component: HomeComponent },
     { path: 'not-found',        loadChildren: './not-found/not-found.module#NotFoundModule' },
-    { path: '**',            redirectTo: 'not-found' }
+    { path: '',                 component: HomeComponent },
+    { path: '**',               redirectTo: 'not-found' }
 ];
 
 @NgModule({

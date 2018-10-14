@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
 
   downloadFile(name) {
     return this._http
-      .get('http://localhost:4200/assets/img/' + name + '.pdf', {
+      .get('http://eloyariascurriculum.com/assets/img/' + name + '.pdf', {
         responseType: ResponseContentType.Blob
       })
       .subscribe(res => {

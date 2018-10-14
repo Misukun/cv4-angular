@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, ResponseContentType } from '@angular/http';
+import { Http, Headers, ResponseContentType } from '@angular/http';
 
 @Component({
   selector: 'app-about',
@@ -14,9 +14,15 @@ export class AboutComponent implements OnInit {
   }
 
   downloadFile(name) {
+    let myHeaders = new Headers;
+    myHeaders.append('Access-Control-Allow-Origin', '*');
+    myHeaders.append("Access-Control-Allow-Credentials", "true");
+    myHeaders.append("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+    myHeaders.append("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
     return this._http
       .get('http://eloyariascurriculum.com/assets/img/' + name + '.pdf', {
-        responseType: ResponseContentType.Blob
+        responseType: ResponseContentType.Blob,
+        headers: myHeaders
       })
       .subscribe(res => {
         console.log('start download:',res);

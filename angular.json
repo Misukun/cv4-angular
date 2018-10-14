@@ -18,7 +18,7 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/assets/img/favicon_new.ico"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -81,7 +81,7 @@
             ],
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/assets/img/favicon_new.ico"
             ]
           }
         },
